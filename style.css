@@ -1,0 +1,151 @@
+/* Google Font Family  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Signika:wght@300..700&display=swap');
+
+/*  For Reference
+   font-family: "Signika", sans-serif;
+   font-family: "Poppins", sans-serif;
+   */
+
+/* Icon Library - Get Bootstrap  */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+/* CSS Variables */
+:root {
+   --bg-color: rgb(2, 80, 2);
+   --font-family-main-heading: "Signika", sans-serif;
+   --font-family-content: "Poppins", sans-serif;
+   --white-color:white;
+}
+
+/* Universal Selector */
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   list-style-type: none;
+}
+
+/* Header Section */
+#header {
+   display: flex;
+   justify-content: space-between;
+   /* border: 1px solid red; */
+   background-color: var(--bg-color);
+   color: #FFFFFF;
+   font-family: var(--font-family-main-heading);
+   padding: 10px 0px;
+   align-items: center;
+   position: fixed;
+   top:0;
+   width:100%;
+}
+
+#header h2 {
+   padding-left: 2dvw;
+   letter-spacing: 1px;
+}
+
+#header #cart {
+   margin-right: 3dvw;
+   padding: 0.3dvw 0.7dvw;
+   font-size: x-large;
+   color: rgb(2, 160, 2);
+   font-weight: bold;
+   /* border: 1px solid red; */
+   border-radius: 10px;
+   background-color: white;
+}
+
+/* Navigation section */
+#nav-section {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   top: 70px;
+   padding-left: 2dvw;
+   padding-right: 2dvw;
+   position: relative; /* Add position relative */
+   z-index: 999; /* Add z-index */
+}
+
+#nav-section img {
+   width: 90px;
+}
+
+#nav-list {
+   display: flex;
+   justify-content: space-evenly;
+   gap: 4dvw;
+   font-family: var(--font-family-main-heading);
+   font-size: larger;
+}
+#nav-list li a{
+   text-decoration: none;
+   color: var(--bg-color);
+}
+
+/* Main Section */
+#main-section{
+   width: 1050px;
+   margin: 75px auto 20px auto; /* Adjust margin-top based on header + nav height */
+   display: flex;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+   row-gap: 10px;
+}
+.product-items{
+   display: flex;
+   flex-direction: column;
+   width: 300px;
+   gap: 10px;
+   border:1px solid gray;
+   border-radius: 15px;
+   
+}
+.product-items img{
+   width: 100%;
+   height: 270px;
+   border-radius: 15px;
+   padding: 5px;
+}
+.product-items p {
+   padding: 5px;
+   font-family: var(--font-family-content);
+   color: var(--bg-color);
+   text-align: justify;
+   
+}
+.card-title{
+   padding: 5px;
+   color: rgb(1, 43, 1);
+   font-family: var(--font-family-main-heading);
+}
+.product-buttons{
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   margin-bottom: 10px;
+}
+.product-buttons button{
+font-family: var(--font-family-main-heading);
+padding: 6px 15px;
+background-color: var(--bg-color);
+color: var(--white-color);
+border-radius: 12px;
+}
+.product-buttons i{
+   font-size: large;
+   padding: 6px 9px;
+   border-radius: 12px;
+   background-color: var(--bg-color);
+   color: var(--white-color);
+}
+
+/* Chat section */
+#chat-icon{
+   font-size:xx-large;
+   position: fixed;
+   bottom: 100px;
+   right: 20px;
+  
+}
